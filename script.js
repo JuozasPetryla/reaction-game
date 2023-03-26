@@ -51,10 +51,10 @@ class Game {
     time.style.color = "#e9ecef";
 
     // Generate highscores and add to list
-    this._generateHighscore();
     this._scores.push(this.miliseconds + this.seconds * 1000);
     this._scores.sort((a, b) => a - b);
-    console.log(this._scores);
+    highscores.innerHTML = "";
+    this._generateHighscore();
 
     // End game, reset times
     buttonGame.classList.remove("active");
@@ -65,8 +65,15 @@ class Game {
   }
 
   _generateHighscore() {
-    let markup = `<li class="highscore">${this.seconds} : ${this.miliseconds}</li>
-    `;
+    let markup = this._scores
+      .map((score) => {
+        return `<li class="highscore">${
+          score.toString().length < 4 ? "0" : score[0]
+        } : ${
+          score.toString().length < 4 ? score : score.toString().slice(1, -1)
+        }</li>`;
+      })
+      .join("");
     highscores.insertAdjacentHTML("beforeend", markup);
   }
 }
