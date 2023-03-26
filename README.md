@@ -4,4 +4,4 @@ A simple reaction game that measures your reaction of a button press in miliseco
 
 # How to play?
 
-To start the game press the start button and wait for the green button to go red. When it does go red press the red button and you reaction time will be displayed. To play again, repeat the same steps.
+To start the game press the start button and wait for the green button to go red. When it does go red press the red button and you reaction time will be displayed. To play again, repeat the same steps. :D
