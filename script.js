@@ -68,7 +68,7 @@ class Game {
     let markup = this._scores
       .map((score) => {
         return `<li class="highscore">${
-          score.toString().length < 4 ? "0" : score[0]
+          score.toString().length < 4 ? "0" : score.toString().slice(0, 1)
         } : ${
           score.toString().length < 4 ? score : score.toString().slice(1, -1)
         }</li>`;
