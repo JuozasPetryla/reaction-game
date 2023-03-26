@@ -20,7 +20,7 @@ class Game {
   startGame() {
     // Enable buttons
     buttonStart.disabled = true;
-    const randomTime = Math.random() * 5;
+    const randomTime = Math.random() * 5 + 1.5;
     time.textContent = "???";
     time.style.color = "#37b24d";
 
