@@ -1,6 +1,6 @@
 # Reaction game
 
-A simple reaction game that measures your reaction of a button press in miliseconds and seconds made with Vanilla Javascript, HTML and CSS only.
+A simple reaction game that measures your reaction of a button press in miliseconds and seconds made with Vanilla Javascript, HTML and CSS only. Netlify link -https://reaction-game-juozas.netlify.app/
 
 # How to play?
 
